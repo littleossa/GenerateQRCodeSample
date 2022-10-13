@@ -11,6 +11,10 @@
 		9763E6CB28F75C99009E6E90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9763E6CA28F75C99009E6E90 /* ContentView.swift */; };
 		9763E6CD28F75C9B009E6E90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9763E6CC28F75C9B009E6E90 /* Assets.xcassets */; };
 		9763E6D028F75C9B009E6E90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9763E6CF28F75C9B009E6E90 /* Preview Assets.xcassets */; };
+		9763E6D728F76F91009E6E90 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9763E6D628F76F91009E6E90 /* QRCodeGenerator.swift */; };
+		9763E6D928F7704F009E6E90 /* ReloadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9763E6D828F7704F009E6E90 /* ReloadButton.swift */; };
+		9763E6DE28F85107009E6E90 /* UIImage+Composited.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9763E6DD28F85107009E6E90 /* UIImage+Composited.swift */; };
+		9763E6E328F855C7009E6E90 /* PhotoSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9763E6E228F855C7009E6E90 /* PhotoSaver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,11 @@
 		9763E6CA28F75C99009E6E90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9763E6CC28F75C9B009E6E90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9763E6CF28F75C9B009E6E90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9763E6D628F76F91009E6E90 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
+		9763E6D828F7704F009E6E90 /* ReloadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadButton.swift; sourceTree = "<group>"; };
+		9763E6DA28F77113009E6E90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9763E6DD28F85107009E6E90 /* UIImage+Composited.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Composited.swift"; sourceTree = "<group>"; };
+		9763E6E228F855C7009E6E90 /* PhotoSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSaver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +60,11 @@
 		9763E6C728F75C99009E6E90 /* GenerateQRCodeSample */ = {
 			isa = PBXGroup;
 			children = (
+				9763E6DA28F77113009E6E90 /* Info.plist */,
 				9763E6C828F75C99009E6E90 /* GenerateQRCodeSampleApp.swift */,
-				9763E6CA28F75C99009E6E90 /* ContentView.swift */,
+				9763E6DF28F85136009E6E90 /* View */,
+				9763E6E028F8514C009E6E90 /* Model */,
+				9763E6E128F85153009E6E90 /* Extension */,
 				9763E6CC28F75C9B009E6E90 /* Assets.xcassets */,
 				9763E6CE28F75C9B009E6E90 /* Preview Content */,
 			);
@@ -65,6 +77,32 @@
 				9763E6CF28F75C9B009E6E90 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9763E6DF28F85136009E6E90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9763E6CA28F75C99009E6E90 /* ContentView.swift */,
+				9763E6D828F7704F009E6E90 /* ReloadButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9763E6E028F8514C009E6E90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9763E6D628F76F91009E6E90 /* QRCodeGenerator.swift */,
+				9763E6E228F855C7009E6E90 /* PhotoSaver.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9763E6E128F85153009E6E90 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9763E6DD28F85107009E6E90 /* UIImage+Composited.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9763E6DE28F85107009E6E90 /* UIImage+Composited.swift in Sources */,
+				9763E6D928F7704F009E6E90 /* ReloadButton.swift in Sources */,
 				9763E6CB28F75C99009E6E90 /* ContentView.swift in Sources */,
+				9763E6D728F76F91009E6E90 /* QRCodeGenerator.swift in Sources */,
+				9763E6E328F855C7009E6E90 /* PhotoSaver.swift in Sources */,
 				9763E6C928F75C99009E6E90 /* GenerateQRCodeSampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,9 +312,12 @@
 				DEVELOPMENT_TEAM = 2V4975L824;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GenerateQRCodeSample/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save QR code in Your Photo Library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,9 +344,12 @@
 				DEVELOPMENT_TEAM = 2V4975L824;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GenerateQRCodeSample/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Save QR code in Your Photo Library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

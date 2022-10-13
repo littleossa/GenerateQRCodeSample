@@ -2,8 +2,6 @@
 //  GenerateQRCodeSampleApp.swift
 //  GenerateQRCodeSample
 //
-//  Created by 平岡修 on 2022/10/13.
-//
 
 import SwiftUI
 
